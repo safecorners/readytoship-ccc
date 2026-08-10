@@ -11,13 +11,13 @@
 
 ## 2. 디자인 토큰
 
-- [ ] 2.1 `src/app/globals.css` — shadcn 시맨틱 변수에 루트 `design.md` 값 주입 (design.md 결정 6의 매핑 표)
-- [ ] 2.2 `globals.css` — shadcn에 대응 없는 토큰 추가 (canvas-soft, body, hairline-strong, 파스텔 오브 5색) 및 `@theme inline` 매핑
-- [ ] 2.3 `globals.css` — 디스플레이 스케일을 `@utility` 묶음으로 정의 (display-mega/xl/lg/md/sm, caption-upper)
-- [ ] 2.4 `globals.css` — 보일러플레이트의 `body { font-family: Arial }` 하드코딩 제거, 폰트 변수 연결
-- [ ] 2.5 `src/components/ui/button.tsx` — 기본 `rounded-md`를 `rounded-full`로 교체 (루트 design.md는 모든 CTA를 pill로 규정)
-- [ ] 2.6 `src/components/ui/badge.tsx` — pill + 대문자 캡션 스케일 적용
-- [ ] 2.7 shadcn 컴포넌트 전반에서 다단계 그림자 유틸 제거하고 단일 그림자 단계만 사용
+- [x] 2.1 `src/app/globals.css` — shadcn 시맨틱 변수에 루트 `design.md` 값 주입 (design.md 결정 6의 매핑 표)
+- [x] 2.2 `globals.css` — shadcn에 대응 없는 토큰 추가 (canvas-soft, body, hairline-strong, 파스텔 오브 5색) 및 `@theme inline` 매핑
+- [x] 2.3 `globals.css` — 디스플레이 스케일을 `@utility` 묶음으로 정의 (display-mega/xl/lg/md/sm, caption-upper)
+- [x] 2.4 `globals.css` — 보일러플레이트의 `body { font-family: Arial }` 하드코딩 제거, 폰트 변수 연결
+- [x] 2.5 `src/components/ui/button.tsx` — 기본 `rounded-md`를 `rounded-full`로 교체 (루트 design.md는 모든 CTA를 pill로 규정)
+- [x] 2.6 `src/components/ui/badge.tsx` — pill + 대문자 캡션 스케일 적용
+- [x] 2.7 shadcn 컴포넌트 전반에서 다단계 그림자 유틸 제거하고 단일 그림자 단계만 사용
 
 ## 3. 콘텐츠 계층
 
