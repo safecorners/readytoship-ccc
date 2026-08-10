@@ -36,4 +36,4 @@
 - [x] 5.3 두 체크가 모두 초록일 때 병합이 허용되는지 확인 (— 검증을 모두 통과하면 병합할 수 있다)
 - [x] 5.4 병합 후 프로덕션에 반영되는지 확인 — `curl -s -o /dev/null -w "%{http_code}" https://readytoship-ccc.vercel.app/guides/claude-code-basics` → 200
 - [x] 5.5 README만 보고 배포 방식을 알 수 있는지 훑어 확인 (— 저장소만 보고 배포 방식을 안다)
-- [ ] 5.6 design.md **Open Question 1**(관리자 우회 허용 여부)의 초안을 사용자에게 검토 요청
+- [x] 5.6 design.md **Open Question 1**(관리자 우회 허용 여부)의 초안을 사용자에게 검토 요청
