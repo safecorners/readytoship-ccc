@@ -1,69 +1,34 @@
-import Image from "next/image";
+import Link from "next/link";
 
+import { Orbs } from "@/components/orbs";
+import { Button } from "@/components/ui/button";
+
+/**
+ * 랜딩.
+ *
+ * 여기서 할 일은 사이트가 무엇인지 한 문장으로 말하고 학습 경로로 보내는
+ * 것뿐이다. 가격표·후기·FAQ는 두지 않는다(`specs/site-pages` — 랜딩 화면).
+ */
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="mx-auto w-full max-w-[1200px] flex-1 px-5 py-12 sm:px-6 sm:py-20">
+      <section className="relative overflow-hidden rounded-3xl bg-canvas-soft px-6 py-20 sm:px-12 sm:py-28">
+        <Orbs />
+        <div className="relative mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
+          <p className="caption-upper text-muted-foreground">밀크티쉐이크</p>
+          <h1 className="display-mega text-foreground">
+            터미널이 처음이어도 괜찮습니다
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="max-w-xl text-body">
+            클로드 코드를 쓰려면 먼저 몇 가지를 설치해야 합니다. 그 과정을 여섯
+            단계로 쪼개고, 하나 끝낼 때마다 체크해 나가도록 만들었습니다. 중간에
+            멈췄다 와도 하던 자리가 남아 있습니다.
           </p>
+          <Button asChild size="lg" className="mt-2">
+            <Link href="/guides">학습 경로 보기</Link>
+          </Button>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

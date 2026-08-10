@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import localFont from "next/font/local";
+
+import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 // Pretendard 가변 폰트 자체 호스팅. weight 45~920 구간을 가지며,
@@ -31,9 +33,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="ko"
-      className={`${pretendard.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${pretendard.variable} ${jetbrainsMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      {/*
+        높이는 뷰포트 단위로 잡는다. `html`에 `height: 100%`를 주면 본문이 그
+        상자를 넘칠 때 `documentElement`의 측정값이 어긋난다.
+      */}
+      <body className="flex min-h-svh flex-col">
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

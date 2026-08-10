@@ -63,11 +63,11 @@
 
 ## 7. 페이지
 
-- [ ] 7.1 `src/app/page.tsx` — 랜딩. 보일러플레이트 전면 교체. 워드마크·헤드라인·한 문단·학습 경로 CTA
-- [ ] 7.2 `src/app/guides/page.tsx` — 학습 경로. 챕터를 단계형 수직 목록으로, 각 단계는 상세의 해당 챕터로 이동
-- [ ] 7.3 `src/app/guides/[slug]/page.tsx` — 가이드 상세. `generateStaticParams` + `dynamicParams = false`
-- [ ] 7.4 챕터 딥링크 — 해시가 있는 주소로 진입 시 해당 챕터가 펼쳐지고 그 위치로 스크롤되도록 처리
-- [ ] 7.5 등록되지 않은 slug 접근 시 404 확인
+- [x] 7.1 `src/app/page.tsx` — 랜딩. 보일러플레이트 전면 교체. 워드마크·헤드라인·한 문단·학습 경로 CTA
+- [x] 7.2 `src/app/guides/page.tsx` — 학습 경로. 챕터를 단계형 수직 목록으로, 각 단계는 상세의 해당 챕터로 이동
+- [x] 7.3 `src/app/guides/[slug]/page.tsx` — 가이드 상세. `generateStaticParams` + `dynamicParams = false`
+- [x] 7.4 챕터 딥링크 — 해시가 있는 주소로 진입 시 해당 챕터가 펼쳐지고 그 위치로 스크롤되도록 처리
+- [x] 7.5 등록되지 않은 slug 접근 시 404 확인
 
 ## 8. 폴리시
 
