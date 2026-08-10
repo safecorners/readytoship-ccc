@@ -36,11 +36,11 @@
 
 ## 4. 진행률 상태
 
-- [ ] 4.1 `src/lib/progress.ts` — `useSyncExternalStore` 스토어 작성. `getSnapshot()`이 캐시된 참조를 반환하는지 확인 (매번 새 객체 반환 시 무한 렌더)
-- [ ] 4.2 `progress.ts` — `getServerSnapshot()`이 빈 상태를 반환하도록 작성
-- [ ] 4.3 `progress.ts` — `storage` 이벤트 구독으로 탭 간 동기화, 내부 emitter로 같은 탭 전파
-- [ ] 4.4 `progress.ts` — 읽기·쓰기를 try/catch로 감싸 저장소 장애 시에도 화면이 동작하도록 처리
-- [ ] 4.5 `progress.ts` — 챕터별·전체 진행률 집계 헬퍼 작성
+- [x] 4.1 `src/lib/progress.ts` — `useSyncExternalStore` 스토어 작성. `getSnapshot()`이 캐시된 참조를 반환하는지 확인 (매번 새 객체 반환 시 무한 렌더)
+- [x] 4.2 `progress.ts` — `getServerSnapshot()`이 빈 상태를 반환하도록 작성
+- [x] 4.3 `progress.ts` — `storage` 이벤트 구독으로 탭 간 동기화, 내부 emitter로 같은 탭 전파
+- [x] 4.4 `progress.ts` — 읽기·쓰기를 try/catch로 감싸 저장소 장애 시에도 화면이 동작하도록 처리
+- [x] 4.5 `progress.ts` — 챕터별·전체 진행률 집계 헬퍼 작성
 
 ## 5. MDX 렌더링 컴포넌트
 
