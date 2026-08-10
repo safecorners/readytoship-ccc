@@ -50,16 +50,16 @@
 
 ## 6. 가이드 컴포넌트
 
-- [ ] 6.1 `SiteHeader` — 브랜드 워드마크 "밀크티쉐이크" + 학습 경로 링크
-- [ ] 6.2 `GuideHero` — 제목·요약 + 파스텔 오브 장식(`aria-hidden`, `pointer-events: none`)
-- [ ] 6.3 `CheckCircle` — `role="checkbox"` + `aria-checked` + 스크린리더 라벨. 스텝과 암묵 챕터가 공용. 터치 대상 44px 확보
-- [ ] 6.4 `ChapterCounter` — 스토어 구독, `aria-live="polite"`, 전부 완료 시 반전 표현
-- [ ] 6.5 `ChapterAccordion` — Radix Accordion `type="multiple"`. 좌측 4px 레일(미완료 hairline-strong / 열림·완료 ink), 원형 번호 배지
-- [ ] 6.6 `StepRow` — Radix Collapsible. 접힌 상태에서 내부 컨트롤이 포커스를 받지 않는지 확인
-- [ ] 6.7 `CommandCard` — 명령어 + 복사 컨트롤 + 성공 후 원복. 클립보드 실패 시 조용히 성공으로 보이지 않게 처리
-- [ ] 6.8 `GuideToc` — 챕터 목록 + 진행 표시. 클릭 시 해당 챕터 펼침 + 스크롤
-- [ ] 6.9 `NextStepCard` — 이어질 가이드가 없을 때의 마무리 표현 포함
-- [ ] 6.10 `PathStep` — 학습 경로 화면의 단계 항목 (진행 표시 + 상세 챕터로 이동)
+- [x] 6.1 `SiteHeader` — 브랜드 워드마크 "밀크티쉐이크" + 학습 경로 링크
+- [x] 6.2 `GuideHero` — 제목·요약 + 파스텔 오브 장식(`aria-hidden`, `pointer-events: none`)
+- [x] 6.3 `CheckCircle` — `role="checkbox"` + `aria-checked` + 스크린리더 라벨. 스텝과 암묵 챕터가 공용. 터치 대상 44px 확보
+- [x] 6.4 `ChapterCounter` — 스토어 구독, `aria-live="polite"`, 전부 완료 시 반전 표현
+- [x] 6.5 `ChapterAccordion` — Radix Accordion `type="multiple"`. 좌측 4px 레일(미완료 hairline-strong / 열림·완료 ink), 원형 번호 배지
+- [x] 6.6 `StepRow` — Radix Collapsible. 접힌 상태에서 내부 컨트롤이 포커스를 받지 않는지 확인
+- [x] 6.7 `CommandCard` — 명령어 + 복사 컨트롤 + 성공 후 원복. 클립보드 실패 시 조용히 성공으로 보이지 않게 처리
+- [x] 6.8 `GuideToc` — 챕터 목록 + 진행 표시. 클릭 시 해당 챕터 펼침 + 스크롤
+- [x] 6.9 `NextStepCard` — 이어질 가이드가 없을 때의 마무리 표현 포함
+- [x] 6.10 `PathStep` — 학습 경로 화면의 단계 항목 (진행 표시 + 상세 챕터로 이동)
 
 ## 7. 페이지
 

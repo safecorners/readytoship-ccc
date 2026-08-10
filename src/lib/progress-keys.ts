@@ -39,5 +39,44 @@ export function formatCounter(done: number, total: number): string {
 
 /** `data-units`에 넣을 문자열. 파싱은 부트 스크립트가 같은 구분자로 한다 */
 export function serializeUnits(unitIds: readonly string[]): string {
-  return unitIds.join(",");
+  return unitIds.join(UNITS_SEPARATOR);
+}
+
+export const UNITS_SEPARATOR = ",";
+
+type ProgressAttrs = {
+  "data-guide": string;
+  "data-units": string;
+  "data-done": "true" | "false";
+  suppressHydrationWarning: true;
+};
+
+/**
+ * 완료 여부를 나타내는 요소에 붙일 속성 묶음.
+ *
+ * 위 상수들과 키 이름이 같아야 부트 스크립트가 찾아낸다. 그래서 한 파일에
+ * 둔다 — 한쪽만 바뀌면 조용히 어긋나는 종류의 결합이다.
+ */
+export function progressAttrs(
+  guideSlug: string,
+  unitIds: readonly string[],
+  complete: boolean
+): ProgressAttrs {
+  return {
+    "data-guide": guideSlug,
+    "data-units": serializeUnits(unitIds),
+    "data-done": complete ? "true" : "false",
+    // 부트 스크립트가 첫 페인트 전에 값을 고쳐 놓으므로 React가 하이드레이션에서
+    // 보는 값과 어긋난다. DOM 쪽을 살린다.
+    suppressHydrationWarning: true,
+  };
+}
+
+/** 진행률 텍스트까지 고쳐 써야 하는 요소 — `progressAttrs` + 표시자 */
+export function counterAttrs(
+  guideSlug: string,
+  unitIds: readonly string[],
+  complete: boolean
+): ProgressAttrs & { "data-counter": "" } {
+  return { ...progressAttrs(guideSlug, unitIds, complete), "data-counter": "" };
 }

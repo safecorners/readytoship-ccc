@@ -38,7 +38,9 @@ function AccordionTrigger({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
   return (
-    <AccordionPrimitive.Header className="flex">
+    // 트리거 옆에 다른 컨트롤(챕터 완료 체크)이 나란히 놓일 수 있도록
+    // 헤더가 남는 폭을 차지하게 둔다. shadcn 기본은 `flex`뿐이다.
+    <AccordionPrimitive.Header className="flex min-w-0 flex-1">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
