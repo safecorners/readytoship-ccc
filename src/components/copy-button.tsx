@@ -79,7 +79,9 @@ export function CopyButton({
         data-status={status}
         aria-label={`${label} ${text}`}
         className={cn(
-          "text-muted-foreground hover:text-foreground data-[status=failed]:text-destructive",
+          // 버튼 자체는 28px이라 손가락에 작다. 겉모습은 두고 보이지 않는
+          // 가상 요소로 사방 8px을 넓혀 44px 터치 대상을 만든다.
+          "relative text-muted-foreground before:absolute before:-inset-2 before:content-[''] hover:text-foreground data-[status=failed]:text-destructive",
           className
         )}
       >
