@@ -40,6 +40,8 @@ Vercel Git 연동으로 자동 배포된다. 수동으로 배포 명령을 실�
 | `main`에 병합 | 프로덕션 배포 → https://readytoship-ccc.vercel.app |
 | 브랜치 push | 그 브랜치만의 프리뷰 주소로 배포. PR에 링크가 붙는다 |
 
+프리뷰는 Vercel Deployment Protection 뒤에 있다. 로그인하지 않으면 열리지 않고 검색에도 잡히지 않는다 — 병합 전 문구가 공개 주소로 돌아다니지 않게 하려는 것이다.
+
 빌드 설정(Next.js 프리셋, `npm run build`, Node 24.x)은 Vercel 프로젝트 설정에 있다. 저장소에는 `vercel.json`/`vercel.ts`를 두지 않는다 — 근거는 `openspec/specs/deploy-pipeline/spec.md`와 해당 change의 design.md에 있다.
 
 ### 병합을 막는 검증

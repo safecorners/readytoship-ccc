@@ -14,9 +14,9 @@
 
 ## 3. PR 올리고 체크 확인
 
-- [ ] 3.1 PR 생성 후 프리뷰 배포가 만들어지고 `Vercel` 체크가 붙는지 확인 (`gh api repos/:owner/:repo/commits/<sha>/status`)
-- [ ] 3.2 lint 잡이 체크 목록에 나타나고 통과하는지 확인 (`gh api .../check-runs`)
-- [ ] 3.3 프리뷰 주소를 열어 사이트가 정상 렌더되는지 확인
+- [x] 3.1 PR 생성 후 프리뷰 배포가 만들어지고 `Vercel` 체크가 붙는지 확인 (`gh api repos/:owner/:repo/commits/<sha>/status`)
+- [x] 3.2 lint 잡이 체크 목록에 나타나고 통과하는지 확인 (`gh api .../check-runs`)
+- [x] 3.3 프리뷰 배포가 Ready이고, 인증 없는 접근이 내용을 보지 못하는지 확인 (`specs/deploy-pipeline` — 권한 없는 접근은 내용을 보지 못한다). 구현 중 드러난 제약이라 스펙·design.md·README를 먼저 고쳤다 (design.md 결정 4)
 - [ ] 3.4 병합
 
 ## 4. 브랜치 보호
