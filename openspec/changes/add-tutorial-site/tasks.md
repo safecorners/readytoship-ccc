@@ -71,11 +71,11 @@
 
 ## 8. 폴리시
 
-- [ ] 8.1 `ProgressBootScript` — 인라인 스크립트로 첫 페인트 전 `data-done`과 카운터 텍스트 반영. 작성 전 `node_modules/next/dist/docs/01-app/02-guides/preventing-flash-before-hydration.md` 확인
-- [ ] 8.2 완료 상태의 시각 표현을 전부 `[data-done="true"]` CSS 선택자로 옮겨 스크립트가 클래스를 몰라도 되게 처리
-- [ ] 8.3 대상 요소에 `suppressHydrationWarning` 부여
-- [ ] 8.4 `prefers-reduced-motion`에서 펼침·접힘 애니메이션 제거
-- [ ] 8.5 포커스 링 — `:focus-visible`에서만, 잉크 색 + offset 적용
+- [x] 8.1 `ProgressBootScript` — 인라인 스크립트로 첫 페인트 전 `data-done`과 카운터 텍스트 반영. 작성 전 `node_modules/next/dist/docs/01-app/02-guides/preventing-flash-before-hydration.md` 확인
+- [x] 8.2 완료 상태의 시각 표현을 전부 `[data-done="true"]` CSS 선택자로 옮겨 스크립트가 클래스를 몰라도 되게 처리
+- [x] 8.3 대상 요소에 `suppressHydrationWarning` 부여
+- [x] 8.4 `prefers-reduced-motion`에서 펼침·접힘 애니메이션 제거
+- [x] 8.5 포커스 링 — `:focus-visible`에서만, 잉크 색 + offset 적용
 
 ## 9. 검증
 

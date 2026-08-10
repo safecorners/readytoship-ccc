@@ -38,10 +38,14 @@ export function ChapterAccordion({ children }: { children: ReactNode }) {
       prev.includes(chapterId) ? prev : [...prev, chapterId]
     );
     // 펼치면서 아래 내용이 밀려나므로 레이아웃이 잡힌 다음 프레임에 위치를 잡는다.
+    // 부드러운 이동도 모션이므로 축소를 선호하면 즉시 이동한다 — CSS의
+    // `scroll-behavior`는 여기에 영향을 주지 못한다.
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     requestAnimationFrame(() => {
-      document
-        .getElementById(chapterAnchorId(chapterId))
-        ?.scrollIntoView({ block: "start", behavior: "smooth" });
+      document.getElementById(chapterAnchorId(chapterId))?.scrollIntoView({
+        block: "start",
+        behavior: reduced ? "auto" : "smooth",
+      });
     });
   }, []);
 

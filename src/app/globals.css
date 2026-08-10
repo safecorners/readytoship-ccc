@@ -168,8 +168,19 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
+
+  /*
+    포커스 링은 `:focus-visible`에서만, 잉크 2px + 2px offset 하나로 통일한다.
+    shadcn 컴포넌트가 들고 있던 `focus-visible:ring-*`는 offset이 없어 같은
+    자리에 두 겹이 생기므로 컴포넌트 쪽에서 걷어냈다.
+  */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
   html {
     @apply font-sans;
   }
@@ -180,5 +191,21 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.01em;
+  }
+}
+
+/*
+  모션 축소 존중. 챕터·스텝의 펼침 애니메이션은 Radix가 `animationend`를 보고
+  DOM에서 내용을 들어내므로, 아예 끄지 않고 감지 못할 길이로 줄인다.
+  이벤트는 그대로 발생하고 사용자에게는 즉시 나타나는 것으로 보인다.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
+import { ProgressBootScript } from "@/components/progress-boot-script";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
@@ -42,6 +43,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-svh flex-col">
         <SiteHeader />
         {children}
+        {/* 대상 요소가 파싱된 뒤에 실행돼야 하므로 본문 맨 뒤다 */}
+        <ProgressBootScript />
       </body>
     </html>
   );
