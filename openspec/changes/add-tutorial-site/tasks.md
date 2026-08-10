@@ -44,9 +44,9 @@
 
 ## 5. MDX 렌더링 컴포넌트
 
-- [ ] 5.1 `src/components/mdx/` — `CodeBlock`(복사 포함), `Callout`, `ExternalLink`, `Chip`/`ChipPath` 작성
-- [ ] 5.2 `src/mdx-components.tsx` — h2~h4/p/ul/ol/li/a/code/pre 기본 매핑을 디자인 토큰에 맞춰 연결
-- [ ] 5.3 긴 명령어·코드가 자체 영역에서만 스크롤되고 페이지를 가로로 밀지 않는지 확인
+- [x] 5.1 `src/components/mdx/` — `CodeBlock`(복사 포함), `Callout`, `ExternalLink`, `Chip`/`ChipPath` 작성
+- [x] 5.2 `src/mdx-components.tsx` — h2~h4/p/ul/ol/li/a/code/pre 기본 매핑을 디자인 토큰에 맞춰 연결
+- [x] 5.3 긴 명령어·코드가 자체 영역에서만 스크롤되고 페이지를 가로로 밀지 않는지 확인
 
 ## 6. 가이드 컴포넌트
 
