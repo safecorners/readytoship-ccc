@@ -1,13 +1,13 @@
 ## 1. 기반 설정
 
-- [ ] 1.1 `npx shadcn@latest init` 실행 — Tailwind v4 / React 19를 올바르게 감지하는지 확인하고 `components.json`, `src/lib/utils.ts`(`cn()`) 생성
-- [ ] 1.2 `npx shadcn@latest add accordion collapsible button badge card separator` 실행 — Radix 프리미티브 동반 설치 확인
-- [ ] 1.3 MDX 의존성 설치 (`@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `@types/mdx`)
-- [ ] 1.4 `pretendard` 설치 후 variable woff2 실제 경로 확인 (설치본 기준으로 확인, 경로를 추측하지 말 것)
-- [ ] 1.5 `next.config.ts` — `createMDX()` 래핑 + `pageExtensions`에 `mdx` 추가. 기존 `reactCompiler: true` 유지
-- [ ] 1.6 `src/mdx-components.tsx` 생성 — Next 16 시그니처는 `export function useMDXComponents(): MDXComponents`로 **인자를 받지 않음**. 작성 전 `node_modules/next/dist/docs/01-app/02-guides/mdx.md` 확인
-- [ ] 1.7 `src/app/layout.tsx` — `lang="ko"`, Pretendard(`next/font/local`) + JetBrains Mono(`next/font/google`), 한국어 메타데이터. Next 16 `LayoutProps<"/">` 시그니처 유지
-- [ ] 1.8 `npm run dev`로 기존 페이지가 여전히 뜨는지 확인 후 다음 단계로
+- [x] 1.1 `npx shadcn@latest init` 실행 — Tailwind v4 / React 19를 올바르게 감지하는지 확인하고 `components.json`, `src/lib/utils.ts`(`cn()`) 생성
+- [x] 1.2 `npx shadcn@latest add accordion collapsible button badge card separator` 실행 — Radix 프리미티브 동반 설치 확인
+- [x] 1.3 MDX 의존성 설치 (`@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `@types/mdx`)
+- [x] 1.4 `pretendard` 설치 후 variable woff2 실제 경로 확인 (설치본 기준으로 확인, 경로를 추측하지 말 것)
+- [x] 1.5 `next.config.ts` — `createMDX()` 래핑 + `pageExtensions`에 `mdx` 추가. 기존 `reactCompiler: true` 유지
+- [x] 1.6 `src/mdx-components.tsx` 생성 — Next 16 시그니처는 `export function useMDXComponents(): MDXComponents`로 **인자를 받지 않음**. 작성 전 `node_modules/next/dist/docs/01-app/02-guides/mdx.md` 확인
+- [x] 1.7 `src/app/layout.tsx` — `lang="ko"`, Pretendard(`next/font/local`) + JetBrains Mono(`next/font/google`), 한국어 메타데이터. Next 16 `LayoutProps<"/">` 시그니처 유지
+- [x] 1.8 `npm run dev`로 기존 페이지가 여전히 뜨는지 확인 후 다음 단계로
 
 ## 2. 디자인 토큰
 
