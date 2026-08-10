@@ -21,18 +21,18 @@
 
 ## 3. 콘텐츠 계층
 
-- [ ] 3.1 `src/content/schema.ts` — 가이드/챕터/스텝/명령어 타입과 `defineGuideMeta()` 작성
-- [ ] 3.2 `src/content/schema.ts` — 런타임 검증 작성: 식별자 중복, 빈 명령어, 잘못된 가이드 참조. 오류 메시지에 가이드·스텝 식별자 포함
-- [ ] 3.3 `src/content/schema.ts` — 정규화 작성: `steps`가 빈 챕터에 암묵 체크 단위 1건 생성 (`implicit: true`)
-- [ ] 3.4 `src/content/registry.ts` — 가이드 순서 정의
-- [ ] 3.5 `src/lib/guides.ts` — 동적 import 로더 작성. 확장자를 리터럴로 유지. 스텝 본문 부재를 검증 오류로 처리
-- [ ] 3.6 `src/content/guides/claude-code-basics/guide.mdx` — 챕터 3개 / 체크 단위 6개 구조 선언 및 인트로 본문
-- [ ] 3.7 스텝 본문 작성: 클로드 데스크탑 설치하기
-- [ ] 3.8 스텝 본문 작성: Git 설치하기 (git-scm.com 링크 + `git --version`)
-- [ ] 3.9 스텝 본문 작성: Node.js 설치하기 (`node --version`, `npm --version`, 권한 관련 명령). **design.md Open Question 1** — 권한 명령의 의미를 OS 분기 초안으로 작성하고 검토 대상으로 표시
-- [ ] 3.10 스텝 본문 작성: 깃허브 저장소 만들기
-- [ ] 3.11 스텝 본문 작성: 깃허브 저장소 클론하기 (`git clone`)
-- [ ] 3.12 챕터 3 본문 작성: 클로드 코드에서 프로젝트 열어보기. **design.md Open Question 2** — 초안으로 작성하고 검토 대상으로 표시
+- [x] 3.1 `src/content/schema.ts` — 가이드/챕터/스텝/명령어 타입과 `defineGuideMeta()` 작성
+- [x] 3.2 `src/content/schema.ts` — 런타임 검증 작성: 식별자 중복, 빈 명령어, 잘못된 가이드 참조. 오류 메시지에 가이드·스텝 식별자 포함
+- [x] 3.3 `src/content/schema.ts` — 정규화 작성: `steps`가 빈 챕터에 암묵 체크 단위 1건 생성 (`implicit: true`)
+- [x] 3.4 `src/content/registry.ts` — 가이드 순서 정의
+- [x] 3.5 `src/lib/guides.ts` — 동적 import 로더 작성. 확장자를 리터럴로 유지. 스텝 본문 부재를 검증 오류로 처리
+- [x] 3.6 `src/content/guides/claude-code-basics/guide.mdx` — 챕터 3개 / 체크 단위 6개 구조 선언 및 인트로 본문
+- [x] 3.7 스텝 본문 작성: 클로드 데스크탑 설치하기
+- [x] 3.8 스텝 본문 작성: Git 설치하기 (git-scm.com 링크 + `git --version`)
+- [x] 3.9 스텝 본문 작성: Node.js 설치하기 (`node --version`, `npm --version`, 권한 관련 명령). **design.md Open Question 1** — 권한 명령의 의미를 OS 분기 초안으로 작성하고 검토 대상으로 표시
+- [x] 3.10 스텝 본문 작성: 깃허브 저장소 만들기
+- [x] 3.11 스텝 본문 작성: 깃허브 저장소 클론하기 (`git clone`)
+- [x] 3.12 챕터 3 본문 작성: 클로드 코드에서 프로젝트 열어보기. **design.md Open Question 2** — 초안으로 작성하고 검토 대상으로 표시
 
 ## 4. 진행률 상태
 
